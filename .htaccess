@@ -1,6 +1,9 @@
-#remove html file extension https://example.com/page.html
-# to https://example.com/page
 RewriteEngine On
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /.  <em>index\ HTTP/
+RewriteRule ^(.</em>  )index$ [http://hellfire.lol/$1](http://hellfire.lol/%241) [L,R=301]
+
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([^\.]+)$ $1.html [NC, L]
+RewriteRule ^([^/]+)/$ [http://hellfire.lol/$1](http://hellfire.lol/%241) [L,R=301]
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /(.+).html\ HTTP/
+RewriteRule ^(.+).html$ [http://hellfire.lol/](http://hellfire.lol/)1 [L,R=301] RewriteRule ^([\w-]+) /$1.html [L]
