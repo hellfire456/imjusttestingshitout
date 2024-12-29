@@ -1,21 +1,125 @@
-<title>hi</title>
-<link href="icon.jpg" rel="icon">
-<a href="https://steamcommunity.com/id/n3nqd">
-<img src="steam.gif" alt="steam" style="width:400px;height:400px;">
-</a><a href="https://twitter.com/n3nqd">
-<img src="twitter.GIF" alt="twitter" style="width:250px;height:250px;">
-</a>
-<a href="https://bsky.app/profile/hellfire.lol">
-<img src="cat.gif" alt="blue sky" style="width:250px;height:250px;">
-</a><a href="/specs">
-<img src="specs.gif" alt="pc specs style="width:250px;height:250px;">
-</a>
-<pre style="font-size:300%;color:white;">     steam         twitter       bluesky     pc specs</pre>
-</main>
-<style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="links and shit.">
+    <title>links and shit</title>
+
+    <link rel="icon" href="icon.jpg" type="icon">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <style>
+        /* General Reset */
+        body, h1, p, a, img {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+
         body {
-            font-family:Arial;
-            background: #000000;
-            color: cock;
-}
-              <style>
+            background-color: #000; /* Black background */
+            color: #fff; /* White text */
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-size: 18px;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #fff; /* White text */
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #ddd; /* Lighter gray text for readability */
+            margin-bottom: 30px;
+        }
+
+        /* Centered Social Links Container */
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .social-link {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: inline-block;
+            cursor: pointer;
+            overflow: hidden;
+        }
+
+        .social-link img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            filter: grayscale(100%); /* Black and white icons */
+            transition: filter 0.3s ease;
+        }
+
+        .social-link:hover img {
+            filter: grayscale(0%); /* Colorize on hover */
+            transform: scale(1.1);
+            box-shadow: 0px 8px 20px rgba(255, 255, 255, 0.2); /* Light shadow on hover */
+        }
+
+        /* Audio Controls hidden by default */
+        audio {
+            display: none;
+        }
+
+        /* Footer */
+        .footer {
+            position: absolute;
+            bottom: 20px;
+            font-size: 0.9em;
+            color: #888; /* Slightly lighter gray for footer text */
+        }
+
+    </style>
+</head>
+<body>
+
+    <img src="https://hellfire.lol/steam.gif" alt="me" style="border-radius: 10px; margin-bottom: 20px;">
+
+    <p>follow me or look at my pc specs:</p>
+
+    <div class="social-links">
+        <!-- Steam -->
+        <a href="https://steamcommunity.com/id/n3nqd" class="social-link" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Steam_icon_logo.svg" alt="Steam">
+        </a>
+
+        <!-- Twitter -->
+        <a href="https://x.com/n3nqd" class="social-link" target="_blank">
+            <img src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-512.png" alt="Twitter">
+        </a>
+
+        <!-- BlueSky -->
+        <a href="https://bsky.app/profile/hellfire.lol" class="social-link" target="_blank">
+            <img src="https://cdn.bsky.app/img/avatar/plain/did:plc:z72i7hdynmk6r22z27h6tvur/bafkreihagr2cmvl2jt4mgx3sppwe2it3fwolkrbtjrhcnwjk4jdijhsoze@jpeg" alt="BlueSky">
+        </a>
+
+        <!-- Specs -->
+        <a href="/specs" class="social-link" target="_blank">
+            <img src="https://static-00.iconduck.com/assets.00/computer-icon-1024x1024-q34qlzrf.png" alt="Specs">
+        </a>
+    </div>
+
+
+</body>
+</html>
